@@ -1,0 +1,88 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.section-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.1;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section-title p {
+  color: var(--color-gray);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.gold-text {
+  color: var(--color-gold);
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 25px;
+  border-radius: 4px;
+  background: var(--color-gold);
+  color: var(--color-black);
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.primary-button:hover {
+  background: var(--color-gold-dark);
+  transform: translateY(-2px);
+}
+
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  color: var(--color-white);
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.secondary-button:hover {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    margin-bottom: 35px;
+  }
+}

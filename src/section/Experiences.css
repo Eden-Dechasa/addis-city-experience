@@ -1,0 +1,111 @@
+/* =========================
+   EXPERIENCES SECTION
+========================= */
+
+.experiences {
+  background: var(--color-white);
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.experiences-title {
+  max-width: 720px;
+
+  margin-bottom: 45px;
+}
+
+.experiences-label {
+  color: var(--color-gold-dark);
+
+  font-size: 0.72rem;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 14px;
+}
+
+.experiences-title h2 {
+  margin-bottom: 18px;
+}
+
+.experiences-title h2 span {
+  color: var(--color-gold-dark);
+}
+
+.experiences-title > p {
+  max-width: 620px;
+
+  color: var(--color-gray);
+
+  font-size: 0.95rem;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   CARD GRID
+========================= */
+
+.experiences-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 22px;
+
+  align-items: start;
+}
+
+/* =========================
+   PRICING NOTE
+========================= */
+
+.pricing-note {
+  max-width: 700px;
+
+  margin: 35px auto 0;
+
+  color: var(--color-gray);
+
+  text-align: center;
+
+  font-size: 0.78rem;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+  .experiences-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .experiences-title {
+    margin-bottom: 35px;
+  }
+
+  .experiences-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .pricing-note {
+    margin-top: 28px;
+  }
+}
