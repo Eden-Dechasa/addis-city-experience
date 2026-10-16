@@ -16,7 +16,7 @@ function Hero() {
       <div className="hero-overlay"></div>
 
       <div className="hero-content">
-        <p className="hero-label">YOUR ADDIS EXPERIENCE AWAITS</p>
+        <p className="hero-label"></p>
 
         <h1>
           Ready to
